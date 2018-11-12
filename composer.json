@@ -1,0 +1,24 @@
+{
+  "name": "andy-franklin/cv-bundle",
+  "description": "A simple CV/Resume bundle. Generate configuration and use contributed templates to create a simple HTML file CV",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andy Franklin",
+      "email": "andy@andyfranklin.co.uk"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "symfony/yaml": "*",
+    "symfony/serializer": "*",
+    "symfony/property-access": "*",
+    "symfony/console": "*",
+    "symfony/finder": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "AndyFranklin\\CVBundle\\": "src/"
+    }
+  }
+}

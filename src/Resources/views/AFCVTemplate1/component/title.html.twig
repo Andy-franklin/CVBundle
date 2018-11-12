@@ -1,0 +1,30 @@
+<div class="title">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{ cvInfo.name }}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>{{ cvInfo.jobTitle }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-9">
+                <p>{{ cvInfo.summary }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="title__subtitle">
+    <div class="container">
+        <ul>
+            {% for social in cvInfo.socialLinks %}
+                <li>
+                    {{ social.type }}:<a>{{ social.link }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
